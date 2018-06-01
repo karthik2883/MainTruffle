@@ -15,6 +15,8 @@ contract('Bitney', function (accounts) {
  
 });
 
+
+
 contract('BTNBurnableToken',function(accounts){
     var helpfulFunctions = require('./utils/BitneyUtils')(BTNBurnableToken, accounts);
     var hfn = Object.keys(helpfulFunctions);
