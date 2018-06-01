@@ -11,7 +11,6 @@ var tokenAddress;
 var Tokenint;
 
 
-
 contract('Sale', function(accounts) {
 
   account_one = accounts[0];
