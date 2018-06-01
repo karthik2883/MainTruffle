@@ -4,8 +4,9 @@
             "name": "Mac",
             "browse": {
                 "limitSymbolsToIncludedHeaders": true
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         }
     ],
-    "version": 4
+    "version": 3
 }

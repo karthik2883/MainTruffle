@@ -1,21 +1,5 @@
 pragma solidity ^0.4.24;
 
-/*
-
-  BASIC ERC20 Sale Contract
-
-  Create this Sale contract first!
-
-     Sale(address ethwallet)   // this will send the received ETH funds to this address
-
-
-  @author Hunter Long
-  @repo https://github.com/hunterlong/ethereum-ico-contract
-
-*/
-
-
-
 contract ERC20 {
   uint public totalSupply;
   function balanceOf(address who) constant returns (uint);
@@ -28,7 +12,7 @@ contract ERC20 {
 }
 
 
-contract Sale {
+contract Ico {
 
     uint256 public maxMintable;
     uint256 public totalMinted;
@@ -51,7 +35,7 @@ contract Sale {
 
     function Sale(address _wallet) {
         startBlock = block.number;
-        maxMintable = 4000000000000000000000000; // 3 million max sellable (18 decimals)
+        maxMintable = 4000000000000000000000000; // 3 million max sellable (8 decimals)
         ETHWallet = _wallet;
         isFunding = true;
         creator = msg.sender;

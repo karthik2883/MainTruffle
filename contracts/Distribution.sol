@@ -3,8 +3,7 @@ pragma solidity ^0.4.24;
 
 contract Distribution {
 
-
-function airdropTokens(address[] _recipient) public onlyOwnerOrAdmin {
+function airdropTokens(address[] _recipient) public  {
     require(now >= startTime);
     uint airdropped;
     for(uint i = 0; i< _recipient.length; i++)

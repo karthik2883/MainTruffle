@@ -1,4 +1,4 @@
-var Sale = artifacts.require("./Sale.sol");
+var Sale = artifacts.require("./Ico.sol");
 var Token = artifacts.require("./Token.sol");
 
 var account_one;
@@ -11,7 +11,7 @@ var tokenAddress;
 var Tokenint;
 
 
-contract('Sale', function(accounts) {
+contract('Ico', function(accounts) {
 
   account_one = accounts[0];
   account_two = accounts[1];
